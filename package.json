@@ -1,0 +1,21 @@
+{
+  "name": "task-manager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": { 
+    "test": "jest --runInBand --coverage",
+    "coverage": "npm test  --coverage --watchAll"
+  },
+  "keywords": [],
+  "author": "Saurabh Kumar Rai",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.3",
+    "pg": "^8.11.3",
+    "supertest": "^6.3.4"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
