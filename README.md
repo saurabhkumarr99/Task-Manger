@@ -23,6 +23,7 @@ Welcome to the Task Manager! This application serves as a platform where users c
 - [Features](#features)
 - [Getting Started](#getting-started)
 - [Usage](#usage)
+- [API Endpoint](#APIEndpoints)
 - [Components Structure](#components-structure)
 - [Screenshots](#screenshots)
 - [Author](#author)
@@ -48,12 +49,12 @@ Welcome to the Task Manager! This application serves as a platform where users c
 
 Follow these steps to run the IPO Tracker App locally:
 
-1. **Unzip the IPO Tracker & Currency Pulse Dashboard App:**
+1. **Unzip the Task Manager:**
 
 2. **Navigate to the project directory:**
 
    ```bash
-   cd IpoTrackerWeb
+   cd Task Manager
    ``` 
 
 2. **Install Dependencies:**
@@ -80,22 +81,29 @@ Follow these steps to run the IPO Tracker App locally:
       npm run coverage
    ``` 
 
-
-
-
 ## Usage
 
-### Upcoming IPO Calendar
+- **User Registration:** Users can register for an account using their email address and password.
+- **User Login:** Registered users can log in to their accounts securely.
+- **Task Creation:** Authenticated users can create new tasks by providing a title and description.
+- **Task Update:** Users can update existing tasks by modifying their title and description.
+- **Task Deletion:** Users can delete unwanted tasks from their task list.
+- **Task Viewing:** Users can view a list of all tasks they have created.
 
-- **Explore Upcoming IPOs:** Access the application to view the calendar showcasing upcoming Initial Public Offerings (IPOs).
-- **Stay Updated:** Stay informed about scheduled IPOs and related details for potential investment opportunities.
-- **Track IPO Progress:** Monitor IPOs through the platform to track their performance and success rates.
+## API Endpoints
 
-### Currency Exchange Rates
+### Users
 
-- **Real-Time Currency Rates:** Utilize the app to check and monitor the latest currency exchange rates.
-- **Compare Different Currencies:** Compare exchange rates between different currency pairs.
-- **Currency Rate Analysis:** Use the provided data for currency rate analysis and informed decision-making.
+- **POST /api/users/register:** Register a new user.
+- **POST /api/users/login:** Log in an existing user.
+
+### Tasks
+
+- **GET /api/tasks:** Get all tasks.
+- **GET /api/tasks/:id:** Get a specific task by ID.
+- **POST /api/tasks:** Create a new task.
+- **PUT /api/tasks/:id:** Update an existing task.
+- **DELETE /api/tasks/:id:** Delete a task by ID.
 
 ## Code Structure
 
@@ -106,41 +114,6 @@ The project follows a structured directory layout for better organization:
 - **ScreenShots/**
 - **App.js**
 - **README.md**
-
-## Screenshots
-
-### Web (React)
-
-<p align="center">
-   <img src="./ScreenShots/1-Home.png" alt="Screenshot 1" width="300" />
-   <img src="./ScreenShots/2.a-Reg.png" alt="Screenshot 1" width="300" />
-   <img src="./ScreenShots/2.b-Reg.png" alt="Screenshot 1" width="300" />
-   <img src="./ScreenShots/3-Contactus.png" alt="Screenshot 1" width="300" />
-   <img src="./ScreenShots/4-Aboutus.png" alt="Screenshot 1" width="300" />
-   <img src="./ScreenShots/5-Login.png" alt="Screenshot 1" width="300" />
-   <img src="./ScreenShots/6-Ipo.png" alt="Screenshot 1" width="300" />
-   <img src="./ScreenShots/7-Exchange.png" alt="Screenshot 1" width="300" />
-</p>
-
-
-
-- `Unit Test`
-<p align="center">
-  <img src="./ScreenShots/UnitTest.png" alt="UnitTest" width="300" />
-</p
-
-- `Selenium Test`
-<p align="center">
-  <img src="./ScreenShots/Selenium.png" alt="UnitTest" width="300" />
-</p
-
-- `Coverage Test`
-<p align="center">
-  <img src="./ScreenShots/1.a-codecoverage.png" alt="UnitTest" width="300" />
-  <img src="./ScreenShots/1.b-codecoverage.png" alt="UnitTest" width="300" />
-  <img src="./ScreenShots/1.c-codecoverage.png" alt="UnitTest" width="300" />
-</p
-
 
 ## Author
 
